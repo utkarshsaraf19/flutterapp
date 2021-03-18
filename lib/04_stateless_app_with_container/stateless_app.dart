@@ -5,6 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  // one use of stateless widget is that if the code is inside it, it can be hot reloaded
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
