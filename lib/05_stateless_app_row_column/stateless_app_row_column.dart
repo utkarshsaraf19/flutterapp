@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.orange,
         body: SafeArea(
             // to consider are of screen and prevent bleeds
             child: Column(
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             Container(
               height: 100,
               width: 100,
-              color: Colors.red,
+              color: Colors.transparent,
               child: Text("Bye"),
             ),
           ],
