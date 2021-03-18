@@ -11,11 +11,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
+          // to cinsider are of screen and prevent bleeds
           child: Container(
+            // simple container
             height: 100,
             width: 100,
-            margin: EdgeInsets.all(30),
-            padding: EdgeInsets.all(12),
+            margin: EdgeInsets.all(
+                30), // spacing of container from margin of screen
+            padding: EdgeInsets.all(12), // spacing of text inside margin
             color: Colors.white,
             child: Text("Hello"),
           ),
