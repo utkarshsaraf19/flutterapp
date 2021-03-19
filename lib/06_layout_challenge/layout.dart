@@ -11,11 +11,23 @@ class MyLayoutApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
+          child: Row(
             children: [
-              Container(height: 100, width: 100, color: Colors.amber),
-              Container(height: 100, width: 100, color: Colors.blue),
-              Container(height: 100, width: 100, color: Colors.lightGreen),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.amber,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.lightGreen,
+              ),
             ],
           ),
         ),
