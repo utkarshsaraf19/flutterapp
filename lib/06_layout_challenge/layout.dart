@@ -12,7 +12,6 @@ class MyLayoutApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
@@ -20,17 +19,22 @@ class MyLayoutApp extends StatelessWidget {
                 color: Colors.amber,
               ),
               Container(
-                width: 100,
-                child: Stack(
-                  alignment: Alignment.center,
+                alignment: Alignment.center,
+                width: 1000,
+                child: Column(
                   children: [
                     Container(
+                      margin: EdgeInsets.only(top: 200),
                       width: 100,
+                      height: 100,
                       color: Colors.yellow,
+                      alignment: Alignment.center,
                     ),
                     Container(
                       width: 100,
+                      height: 100,
                       color: Colors.yellow[200],
+                      alignment: Alignment.center,
                     ),
                   ],
                 ),
@@ -38,7 +42,6 @@ class MyLayoutApp extends StatelessWidget {
               Container(
                 width: 100,
                 color: Colors.lightGreen,
-                alignment: Alignment.topLeft,
               ),
             ],
           ),
