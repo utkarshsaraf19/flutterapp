@@ -27,3 +27,7 @@ flutter:
   assets:
     - images/
     # - images/diamonds.png
+  fonts:
+  - family: Pacifico
+    fonts:
+    - asset: fonts/Pacifico-Regular.ttf
