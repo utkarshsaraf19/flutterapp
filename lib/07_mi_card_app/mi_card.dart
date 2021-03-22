@@ -27,7 +27,16 @@ class MiCardApp extends StatelessWidget {
                 fontFamily: 'Pacifico',
                 fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            Text(
+              "FLUTTER DEVELOPER",
+              style: TextStyle(
+                fontSize: 20,
+                fontFamily: 'SourceSansPro',
+                color: Colors.black,
+                letterSpacing: 2.5,
+              ),
+            ),
           ],
         )),
       ),
