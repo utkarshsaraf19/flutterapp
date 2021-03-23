@@ -38,6 +38,13 @@ class MiCardApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
+              SizedBox(
+                height: 10,
+                width: 300,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
               Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(
@@ -63,7 +70,7 @@ class MiCardApp extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              Card(
+              Container(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(
                   vertical: 5,
