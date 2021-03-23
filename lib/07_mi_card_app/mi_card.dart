@@ -13,32 +13,89 @@ class MiCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Column(
-          children: [
-            CircleAvatar(
-              radius: 50,
-              backgroundImage: AssetImage('images/diamond.png'),
-            ),
-            Text(
-              "Diamond Saraf",
-              style: TextStyle(
-                fontSize: 40,
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/diamond.png'),
+              ),
+              Text(
+                "Diamond Saraf",
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'SourceSansPro',
+                  color: Colors.black,
+                  letterSpacing: 2.5,
+                ),
+              ),
+              Container(
                 color: Colors.white,
-                fontFamily: 'Pacifico',
-                fontWeight: FontWeight.bold,
+                margin: EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 5,
+                ),
+                padding: EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      size: 15,
+                      color: Colors.teal.shade900,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "+91 814 928 4868",
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 15,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            Text(
-              "FLUTTER DEVELOPER",
-              style: TextStyle(
-                fontSize: 20,
-                fontFamily: 'SourceSansPro',
-                color: Colors.black,
-                letterSpacing: 2.5,
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(
+                  vertical: 5,
+                  horizontal: 10,
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal.shade900,
+                      size: 15,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "utkarsh.saraf19@gmail.com",
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 15,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
-        )),
+            ],
+          ),
+        ),
       ),
     );
   }
