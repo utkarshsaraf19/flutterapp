@@ -45,25 +45,20 @@ class MiCardApp extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(25.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        size: 15,
-                        color: Colors.teal.shade900,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      size: 15,
+                      color: Colors.teal.shade900,
+                    ),
+                    title: Text(
+                      "+91 814 928 4868",
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 15,
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "+91 814 928 4868",
-                        style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 15,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
               ),
@@ -75,26 +70,7 @@ class MiCardApp extends StatelessWidget {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(25.0),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.email,
-                        color: Colors.teal.shade900,
-                        size: 15,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        "utkarsh.saraf19@gmail.com",
-                        style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 15,
-                        ),
-                      ),
-                    ],
-                  ),
+                  child: ListTile(),
                 ),
               ),
             ],
