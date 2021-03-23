@@ -14,6 +14,7 @@ class MiCardApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50,
@@ -43,24 +44,24 @@ class MiCardApp extends StatelessWidget {
                   horizontal: 10,
                   vertical: 5,
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(25.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.phone,
-                      size: 15,
-                      color: Colors.teal.shade900,
-                    ),
-                    title: Text(
-                      "+91 814 928 4868",
-                      style: TextStyle(
-                        color: Colors.teal,
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 15,
-                      ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 15,
+                    color: Colors.teal.shade900,
+                  ),
+                  title: Text(
+                    "+91 814 928 4868",
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 15,
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 20.0,
               ),
               Card(
                 color: Colors.white,
@@ -68,9 +69,20 @@ class MiCardApp extends StatelessWidget {
                   vertical: 5,
                   horizontal: 10,
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(25.0),
-                  child: ListTile(),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade900,
+                    size: 15,
+                  ),
+                  title: Text(
+                    "utkarsh.saraf19@gmail.com",
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 15,
+                    ),
+                  ),
                 ),
               ),
             ],
